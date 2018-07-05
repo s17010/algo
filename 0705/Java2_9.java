@@ -14,7 +14,7 @@ class Java2_9 {
 	}
 
 	//--- 西暦y年m月d日の年内の残りの日数を求める ---//
-	static int dayOfYear(int y, int m, int d) {
+	static int leftDayOfYear(int y, int m, int d) {
 		int days = d;						// 日数
 
 		for (int i = 1; i < m; i++)
@@ -34,7 +34,7 @@ class Java2_9 {
 			System.out.print("日：");  int day   = stdIn.nextInt();// 日
 
 			System.out.printf("残り%d日目です。\n",
-										dayOfYear(year, month, day));
+										leftDayOfYear(year, month, day));
 
 			System.out.print("もう一度しますか（1…はい／0…いいえ）：");
 			retry = stdIn.nextInt();
