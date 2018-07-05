@@ -33,7 +33,7 @@ class Java2_9 {
 			System.out.print("月：");  int month = stdIn.nextInt();// 月
 			System.out.print("日：");  int day   = stdIn.nextInt();// 日
 
-			System.out.printf("残り%d日目です。\n",
+			System.out.printf("残り%d日です。\n",
 										leftDayOfYear(year, month, day));
 
 			System.out.print("もう一度しますか（1…はい／0…いいえ）：");
