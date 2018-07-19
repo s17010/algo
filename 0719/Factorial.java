@@ -7,12 +7,16 @@ class Factorial {
 	//--- 非負の整数値nの階乗値を返却 ---//
 	static int factorial(int n) {
 		int ans =1;
+		int mainas = -1;
 		if (n > 0){
 			for(int i = 1; i<=n;i++)
 				ans = ans*i;
 		return ans;
-		}else
-			return 0;
+		}else{
+			for (int i = 1; i <= n*(-1); i++)
+				mainas = mainas * i;
+		return mainas;
+		}
 	}
 
 	public static void main(String[] args) {
