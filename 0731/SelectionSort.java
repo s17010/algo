@@ -12,7 +12,7 @@ class SelectionSort {
 				if (a[j] < a[min])
 					min = j;
 			for (int m = 0; m < n; m++)
-				System.out.print((m == i) ? "  * " : (m == min) ? "  + " : "    ");
+				System.out.print((m == i) ? "  * " : (m == min) ? " + " : "   ");
 			System.out.println();
 
 			for (int m = 0; m < n; m++)
