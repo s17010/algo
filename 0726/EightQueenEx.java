@@ -1,3 +1,7 @@
+/*
+ *解答例 (Answer example)
+ */
+
 class EightQueenEx {
 	static boolean[] flag_a = new boolean[8];
 	static boolean[] flag_b = new boolean[15];
