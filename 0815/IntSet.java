@@ -69,6 +69,7 @@ public class IntSet {
 	public void clear() {
 		num = 0;
 	}
+	//-----------------------------------------------//
 
 	public void copyTo(IntSet s) {
 		int n = (s.max < num) ? s.max : num;
