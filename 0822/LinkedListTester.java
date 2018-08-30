@@ -58,6 +58,7 @@ enum Menu {
 	NEXT("着目ノードを進める"),
 	PRINT_CRNT("着目ノードを表示"),
 	DUMP("全ノードを表示"),
+	PURGE("先頭以外削除"),
 	TERMINATE("終了");
 
 	private final String message;
@@ -159,6 +160,9 @@ public static void main(String[] args) {
 			case CLEAR :
 				list.clear();
 				break;
+
+			case PURGE :
+				list.purge(Data.NO_ORDER);
 		}
 	} while (menu != Menu.TERMINATE);
 }
